@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+
+  "developer" : {
+	  "name" : "Ahmed Shariff",
+	  "url" : "https://github.com/ahmed-shariff"
+  },
+  
+  "name": "yt video control",
+  "description": "Change the video speed of yt",
+  "version": "1.1",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": [
+    "*://www.youtube.com/watch*"
+  ],
+  "commands": {
+	  "speed0": {
+	    "suggested_key": {
+		    "default": "Alt+0",
+		    "mac": "Command+0"
+	    },
+	    "description": "Set video speed to 0"
+	  },
+	  "speed1": {
+	    "suggested_key": {
+		    "default": "Alt+1",
+		    "mac": "Command+1"
+	    },
+	    "description": "Set video speed to 1"
+	  },
+	  "speed2": {
+	    "suggested_key": {
+		    "default": "Alt+2",
+		    "mac": "Command+2"
+	    },
+	    "description": "Set video speed to 2"
+	  },
+	  "speed3": {
+	    "suggested_key": {
+		    "default": "Alt+3",
+		    "mac": "Command+3"
+	    },
+	    "description": "Set video speed to 3"
+	  },
+	  "speed4": {
+	    "suggested_key": {
+		    "default": "Alt+4",
+		    "mac": "Command+4"
+	    },
+	    "description": "Set video speed to 4"
+	  }
+  }
+}
