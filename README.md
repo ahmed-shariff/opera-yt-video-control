@@ -1,5 +1,4 @@
 # Usage
-`Alt+0` - set speed to 0
 `Alt+1` - set speed to 1
 `Alt+2` - set speed to 2
 `Alt+3` - set speed to 3

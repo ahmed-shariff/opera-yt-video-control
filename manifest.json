@@ -19,13 +19,6 @@
     "*://www.youtube.com/watch*"
   ],
   "commands": {
-	  "speed0": {
-	    "suggested_key": {
-		    "default": "Alt+0",
-		    "mac": "Command+0"
-	    },
-	    "description": "Set video speed to 0"
-	  },
 	  "speed1": {
 	    "suggested_key": {
 		    "default": "Alt+1",
