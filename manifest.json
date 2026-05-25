@@ -16,7 +16,7 @@
 
   "permissions": ["tabs", "scripting"],
   "host_permissions": [
-    "*://www.youtube.com/watch*"
+    "<all_urls>"
   ],
   "commands": {
 	  "speed1": {

@@ -13,5 +13,15 @@ chrome.commands.onCommand.addListener((command) => {
 
 function changeSpeed(speed) {
     console.log(`setting video speed to ${speed}`);
-    document.getElementsByClassName("video-stream")[0].playbackRate = speed;
+
+    const videoStreamElements = document.getElementsByClassName("video-stream");
+    if (videoStreamElements.length > 0) {
+        videoStreamElements[0].playbackRate = speed;
+        return;
+    }
+
+    const videoElements = document.querySelectorAll("video");
+    if (videoElements.length > 0) {
+        videoElements.forEach(el => el.playbackRate = speed);
+    }
 }
